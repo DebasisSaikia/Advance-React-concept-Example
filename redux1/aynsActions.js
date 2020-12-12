@@ -77,6 +77,7 @@ const fetchUsers = () => {
 // creating store
 const store = createStore(reducer, applyMiddleWare(thunk));
 
+// store subscription
 store.subscribe(() => {
   console.log(store.getState());
 });
