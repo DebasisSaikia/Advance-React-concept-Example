@@ -1,30 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
 
 /* map  */
-#map{
-    height:100vh ;
-    width: 75%;
+#map {
+  height: 100vh;
+  width: 75%;
 }
-main{
+main {
   display: flex;
 }
-.shop_list{
+.shop_list {
   width: 25%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(77, 76, 75);
+  color: rgb(189, 191, 194);
 }
 
 /* heading */
-.shop_list .heading{
+.shop_list .heading {
   background-color: rgb(5, 134, 80);
   color: #fff;
   text-align: center;
 }
-.shop_list .heading h2{
+.shop_list .heading h2 {
   padding: 1rem;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  border-left: 0;
+  background-color: rgba(0, -0, -0, -0.1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(247, 169, 26);
+  border-radius: 0;
+}
+
+.list {
+  padding: 0 1rem;
+  list-style-type: none;
+}
+.shop_list .shop_item {
+  margin: 1rem 0;
+  border-bottom: 1px solid rgb(58, 57, 57);
+  padding-bottom: 1rem;
+}
+.shop_list li:last-child .shop_item {
+  border: none;
+}
+.shop_list .shop_item a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color:rgb(228, 129, 15);
+}
+.shop_list .shop_item p{
+  font-size: 15px;
 }

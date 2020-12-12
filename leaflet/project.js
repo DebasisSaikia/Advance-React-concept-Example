@@ -8,3 +8,37 @@ const attribution =
 const tiles = L.tileLayer(tileUrl, { attribution });
 // adding to map
 tiles.addTo(map);
+
+// generating markup
+function generateList() {
+  const ul = document.querySelector(".list");
+  shopList.forEach((shop) => {
+    const li = document.createElement("li");
+    const div = document.createElement("div");
+    const a = document.createElement("a");
+    const p = document.createElement("p");
+
+    div.classList.add("shop_item");
+    a.innerText = shop.properties.name;
+    a.href = "#";
+    p.innerText = shop.properties.address;
+
+    div.appendChild(a);
+    div.appendChild(p);
+    li.appendChild(div);
+    ul.appendChild(li);
+  });
+}
+
+generateList();
+
+
+// markups
+function onEachFeature(){
+
+}
+
+const shopLayer=L.geoJSON(shopList,{
+    onEachFeature:onEachFeature,
+    pointToLayer:function(feature,latlng){}
+})
