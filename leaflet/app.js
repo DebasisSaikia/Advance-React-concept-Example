@@ -47,4 +47,19 @@ const polyline = L.polyline(latlngs);
 polyline.addTo(map);
 
 // adding marker to map
+// const CMarker = L.circleMarker([26.5577358, 93.8052436], { color: "purple" });
+// CMarker.addTo(map);
 
+// adding custom icon
+const icon = L.icon({
+  iconUrl: "https://cdn.onlinewebfonts.com/svg/img_319799.png",
+  iconSize: [30, 30],
+});
+// marker
+// const marker = L.marker([26.5577358, 93.8052436], { icon });
+const marker1 = L.marker([26.5577358, 93.8052436], { icon });
+// marker.bindPopup('Rakesh Shop')
+// marker.bindPopup('<h2>Rakesh Shop</h2>')
+marker1.bindTooltip("<h2>Rakesh Shop</h2>").openTooltip();
+// marker.addTo(map);
+marker1.addTo(map);
