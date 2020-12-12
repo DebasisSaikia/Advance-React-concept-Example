@@ -1,10 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
 }
 
 /* map  */
 #map{
     height:100vh ;
+    width: 75%;
+}
+main{
+  display: flex;
+}
+.shop_list{
+  width: 25%;
+}
+
+/* heading */
+.shop_list .heading{
+  background-color: rgb(5, 134, 80);
+  color: #fff;
+  text-align: center;
+}
+.shop_list .heading h2{
+  padding: 1rem;
 }
