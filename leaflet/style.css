@@ -57,12 +57,40 @@ main {
 .shop_list li:last-child .shop_item {
   border: none;
 }
-.shop_list .shop_item a{
+.shop_list .shop_item a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 800;
-  color:rgb(228, 129, 15);
+  color: rgb(228, 129, 15);
 }
-.shop_list .shop_item p{
+.shop_list .shop_item p {
   font-size: 15px;
+}
+
+/* styling popup */
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: hidden;
+}
+.leaflet-popup-content {
+  margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+  padding: 16px;
+  background-color: rgb(5, 134, 80);
+  color: #fff;
+  font-size: 16px;
+}
+.leaflet-popup-content-wrapper p {
+  padding: 0 16px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone_no {
+  padding: 16px;
+  padding-top: 0;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .phone_no a{
+  font-size: 14px;
+  color: orangered;
 }
